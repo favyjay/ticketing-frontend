@@ -1,9 +1,8 @@
 // src/api.js
 import axios from 'axios';
 
-// While testing locally, we use localhost.
-// When we deploy, we will change this URL to our live Render backend URL.
-const API_BASE_URL = 'http://localhost:5000/api';
+// We replace 'http://localhost:5000/api' with your live Render backend URL
+const API_BASE_URL = 'https://ticketing-backend-om89.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
